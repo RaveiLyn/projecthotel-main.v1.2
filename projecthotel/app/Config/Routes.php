@@ -11,4 +11,7 @@ $routes->get(' /services', 'Services::services');
 $routes->get(' /rooms', 'Rooms::rooms');
 $routes->get(' /booking', 'Booking::booking');
 $routes->get(' /login', 'Login::login');
+$routes->get(' /login', 'Login::login');
 $routes->get(' /register', 'Register::register');
+$routes->get(' /team', 'Team::team');
+$routes->get(' /testimoni', 'Testimoni::testimoni');

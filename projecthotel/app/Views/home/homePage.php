@@ -1,5 +1,5 @@
 <!-- Carousel start -->
-<div class="container-fluid p-0 mb-5">
+        <div class="container-fluid p-0 mb-5">
             <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">

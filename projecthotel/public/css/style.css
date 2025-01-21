@@ -76,6 +76,15 @@
 }
 
 
+/* Login Button */
+.btn-block {
+    text-transform: capitalize;
+    display: block;
+    width: 100%;
+    border-radius: 600px;
+}
+
+
 /*** Navbar ***/
 .navbar-dark .navbar-nav .nav-link {
     margin-right: 30px;
@@ -86,10 +95,54 @@
     outline: none;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
     color: var(--primary);
 }
+
+
+.navbar-nav .login-button {
+    font-size: 15px;
+    background-color: #007bff; /* Warna tombol */
+    color: white; /* Warna teks */
+    margin-right: 20px;
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    padding: 5px 15px; /* Memberikan jarak dalam tombol */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    text-transform: uppercase;
+    display: inline-block; /* Menyesuaikan bentuk tombol */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Efek transisi */
+}
+
+.navbar-nav .login-button:hover {
+    background-color: #0056b3; /* Warna tombol saat hover */
+    color: #ffffff; /* Warna teks saat hover */
+}
+
+.Logo{
+    float: left;
+    width: 85px;
+    height: 110px;
+    padding: 0px 0px 0px 0px;
+}
+
+.c-modal_item a{
+    margin-right: 3px;
+    padding: 5px 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    outline: none;
+    border: 2px solid #666;
+    border-radius: 30px;
+}
+
+.c-modal_item a:hover{
+    color: #fea116;
+}
+
+
 
 @media (max-width: 991.98px) {
     .navbar-dark .navbar-nav .nav-link  {
@@ -103,8 +156,8 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    background: rgba(15, 23, 43, .7);
+    bottom: 100;
+    background: rgba(33, 37, 41, .7);
     z-index: 1;
 }
 
@@ -344,7 +397,87 @@
 
 
 /*** Testimonial ***/
-.testimonial {
+.carousels img {
+    width: 70px;
+    max-height: 70px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    overflow: hidden;
+}
+.carousel-inners {
+    padding: 1em;
+}
+  
+@media screen and (min-width: 576px) {
+    .carousel-inners {
+        display: flex;
+        width: 90%;
+        margin-inline: auto;
+        padding: 1em 0;
+        overflow: hidden;
+    }
+    .carousel-items {
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100% / 2);
+    }
+  }
+@media screen and (min-width: 1024px) {
+    .carousel-items {
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100% / 3);
+    }
+}
+.carousels .card {
+    margin: 0 0.5em;
+    border: 0;
+}
+
+.carousel-control-nexts{
+    justify-items: center;
+    float: right;
+}
+
+.carousel-control-prevs{
+    justify-items: center;
+    float: left;
+}
+  
+.carousel-control-prevs,
+.carousel-control-nexts {
+    justify-items: center;
+    margin-bottom: auto;
+    width: 4rem;
+    height: 4rem;
+    background-color: #0d6efd;
+    border-radius: 100%;
+    top: 50%;
+    transform: translateY(auto);
+}
+
+.carousel-control-prevs:hover,
+.carousel-control-nexts:hover {
+    opacity: 0.9;;
+}
+
+.carousel-control-prevs-icon,
+.carousel-control-nexts-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+} */
+
+
+/* sss */
+/* .testimonial {
     background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(../img/carousel-2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -390,7 +523,7 @@
 .testimonial-carousel .owl-nav .owl-next:hover {
     color: var(--primary);
     background: #FFFFFF;
-}
+} */
 
 
 /*** Team ***/
